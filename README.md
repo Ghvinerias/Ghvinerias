@@ -1,16 +1,18 @@
-### Hi there 👋
-
-<!--
-**Ghvinerias/Ghvinerias** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<a href="https://github.com/Ghvinerias">
+  <img align="center" width="49%" src="./metrics.base.svg"/>
+</a>
+<a href="https://github.com/Ghvinerias">
+  <img align="center" width="49%" src="./metrics.plugin.isocalendar.fullyear.svg"/>
+</a>
+<a href="https://github.com/Ghvinerias">
+  <img align="center" width="49%" src="./metrics.plugin.languages.indepth.svg"/>
+</a>
+<a href="https://github.com/Ghvinerias">
+  <img align="center" width="49%" src="./metrics.plugin.habits.facts.svg"/>
+</a>
+<a href="https://github.com/Ghvinerias">
+  <img align="center" width="49%" src="./metrics.plugin.notable.indepth.svg"/>
+</a>
+<a href="https://github.com/Ghvinerias">
+  <img align="center" width="49%" src="./metrics.plugin.activity.svg"/>
+</a>
