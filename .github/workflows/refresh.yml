@@ -17,7 +17,7 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           base_indepth: yes
   isocalender:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: lowlighter/metrics@latest
         with:
