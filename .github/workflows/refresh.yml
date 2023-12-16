@@ -6,65 +6,65 @@ on:
 
 jobs:
   base:
-    runs-on: github
+    runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.base.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.ubuntu-latest_TOKEN }}
           base_indepth: yes
   isocalender:
-    runs-on: github
+    runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.isocalendar.fullyear.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.ubuntu-latest_TOKEN }}
           base: ""
           plugin_isocalendar: yes
           plugin_isocalendar_duration: full-year
   languages:
-    runs-on: github
+    runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.languages.indepth.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.ubuntu-latest_TOKEN }}
           base: ""
           plugin_languages: yes
           plugin_languages_indepth: yes
           plugin_languages_ignored: handlebars, php
           plugin_languages_details: lines, bytes-size, percentage
   habits:
-    runs-on: github
+    runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.habits.facts.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.ubuntu-latest_TOKEN }}
           base: ""
           plugin_habits: yes
           plugin_habits_facts: no
           plugin_habits_charts: yes
   notable:
-    runs-on: github
+    runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
           filename: metrics.plugin.notable.indepth.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_token: ${{ secrets.GITHUB_TOKEN }}
+          committer_token: ${{ secrets.ubuntu-latest_TOKEN }}
           base: ""
           plugin_notable: yes
           plugin_notable_from: all
           plugin_notable_indepth: yes
           plugin_notable_types: commit, pull_request, issue
   activity:
-    runs-on: github
+    runs-on: ubuntu-latest
     steps:
       - uses: lowlighter/metrics@latest
         with:
