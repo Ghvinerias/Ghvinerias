@@ -1,6 +1,6 @@
 # Hi, I'm Ghvineria 👋
 
-I’m rebuilding this profile repository to better reflect my work, interests, and public footprint.
+I’m passionate about DevOps
 
 ## About me
 
