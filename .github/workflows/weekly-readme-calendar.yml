@@ -1,0 +1,37 @@
+name: Weekly README Calendar
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate contribution calendar SVG
+        uses: lowlighter/metrics@latest
+        with:
+          filename: assets/contributions-calendar.svg
+          token: ${{ github.token }}
+          committer_token: ${{ github.token }}
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      - name: Update README calendar timestamp
+        run: |
+          today="$(date -u +%F)"
+          sed -i "s|<!-- CALENDAR-LAST-UPDATED: .* -->|<!-- CALENDAR-LAST-UPDATED: ${today} -->|" README.md
+
+      - name: Commit updates
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh weekly contribution calendar"
+          file_pattern: README.md assets/contributions-calendar.svg
