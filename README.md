@@ -9,8 +9,7 @@ I’m passionate about DevOps
 
 ## Fields of expertise
 
-- Full-stack web development
-- Product-focused engineering
+- Production-focused engineering
 - Automation and developer workflows
 - Scalable systems and platform thinking
 
